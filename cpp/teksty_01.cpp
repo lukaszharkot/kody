@@ -35,18 +35,18 @@ int zlicz_znaki(char t[]){
 int main(int argc, char **argv)
 {
 	char znak = 'a';
-	cout << (int)znak << endl;
+	cout << (int)znak << endl;//znak na kod
 	
 	int kod=65;
-	cout << (char)kod << endl;
+	cout << (char)kod << endl;//kod na znak
 	
 	int rozmiar=10;
 	char znaki[rozmiar]; //deklaracja tabeli znakowej
 	
 	//pobierz1(znaki);
-	pobierz2(znaki,rozmiar);
-    drukuj1(znaki, rozmiar);
-	drukuj2(znaki);
+	pobierz2(znaki,rozmiar); // lepiej uzywac z getline
+    drukuj1(znaki, rozmiar); // nie wiemy czy wszystkie znaki sa od uzytkownika
+	drukuj2(znaki);          // pewnosc ze odczytamy znaki poprawnie
 	cout << "Wprowadzono " << zlicz_znaki(znaki) << " znaków!";
 	
 	return 0;
