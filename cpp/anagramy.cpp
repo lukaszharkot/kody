@@ -8,6 +8,7 @@ void anagramy(char w[], int r) {
 		    if (i1 == i2) continue;
 		    for(i3 = 0; i3 < r; i3++){
 		        if(i1 == i3 || i2==i3) continue;
+		        //i4 = 6 - i1 + i2 + i3
 		        for(i4 = 0; i4 < r; i4++){
 		            if (i1==i4 || i2==i4 || i3==i4)continue;
 			        cout << w[i1] << w[i2] << w[i3] << w[i4] << endl;
