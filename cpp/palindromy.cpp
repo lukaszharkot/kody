@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int zlicz_znaki(char t[]){
+int zl
+icz_znaki(char t[]){
     int i=0;
     while (t[i]!= '\0'){
         i++;

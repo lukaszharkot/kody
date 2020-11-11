@@ -1,13 +1,9 @@
 def czy_palindrom(wyraz):
-    i = 0
-    rozmiar = len(wyraz)
-    czyp = True
-
-    while(i < rozmiar/2):
-        if(wyraz[i] != wyraz[rozmiar-1-i]):
-            czyp = False
-        break
-    return czyp
+    rozmiar=len(wyraz)/2
+    for i in range(0, int(rozmiar)):
+        if wyraz[i] != wyraz[int(rozmiar)-1-i]:
+            return False
+    return True
 
 def main(args):
     wyraz = input("Podaj słowo: ")
